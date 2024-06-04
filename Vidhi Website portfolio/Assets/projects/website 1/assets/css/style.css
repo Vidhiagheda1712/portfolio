@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1348px;
+    margin: 0 auto;
+    padding-left: -12px;
+    padding-right: -12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+button {
+    border: 0;
+}
+
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --primary-color--: #f7f7f5;
+    --secondary-color: #28c76f;
+    --black-color: #181818;
+    --white-color: #fff;
+    --gray-color: #7A7A7A;
+    --navy-color: #222e40;
+    --fs-12: 12px;
+    --fs-13: 13px;
+    --fs-14: 14px;
+    --fs-15: 15px;
+    --fs-16: 16px;
+    --fs-20: 20px;
+    --fs-21: 21px;
+    --fs-23: 23px;
+    --fs-28: 28px;
+    --fs-34: 34px;
+    --fs-44: 44px;
+    --fs-64: 64px;
+    --fw-100: 100;
+    --fw-200: 200;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+    --IBMplex: --IBMplex;
+    --spartan: --spartan;
+}
+
+.w-1 {
+    width: 8.33%;
+}
+
+.w-2 {
+    width: 16.66%;
+}
+
+.w-3 {
+    width: 25%;
+}
+
+.w-4 {
+    width: 33.33%;
+}
+
+.w-5 {
+    width: 41.66%;
+}
+
+.w-6 {
+    width: 50%;
+}
+
+.w-7 {
+    width: 58.33%;
+}
+
+.w-8 {
+    width: 66.66%;
+}
+
+.w-9 {
+    width: 75%;
+}
+
+.w-10 {
+    width: 83.33%;
+}
+
+.w-11 {
+    width: 91.66%;
+}
+
+.w-12 {
+    width: 100%;
+}
+
+.w-1,
+.w-2,
+.w-3,
+.w-4,
+.w-5,
+.w-6,
+.w-7,
+.w-8,
+.w-9,
+.w-10,
+.w-11,
+.w-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+/* navbar start   */
+nav {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav .n-info {
+    color: #181818;
+    font-size: var(--fs-15);
+    font-family: var(--IBMplex);
+}
+
+nav .n-info i {
+    margin-right: 5px;
+}
+
+nav .n-info span {
+    margin-right: 20px;
+}
+
+nav .n-icon a {
+    color: #181818;
+    margin-right: 15px;
+    font-size: var(--fs-15);
+}
+
+/* navbar end */
+/* header start */
+
+
+header {
+    background-color: var(--white-color);
+    position: sticky;
+    z-index: 99999999;
+    top: 0;
+
+}
+
+header .logo {
+    max-width: 60%;
+}
+
+header .menu {
+    padding: 20px 30px 20px 0;
+}
+
+header .menu ul li a {
+    color: var(--black-color);
+    font-size: 18px;
+    padding: 0px 30px;
+    position: relative;
+
+}
+
+
+header .menu ul li .drop-down {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    padding-left: 20px;
+    z-index: 9;
+    background-color: var(--white-color);
+    width: 220px;
+}
+
+header .menu ul li .drop-down ul li a {
+    transition: 0.2s;
+}
+
+header .menu ul li .drop-down ul li i {
+    margin-right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+header .menu ul li .drop-down ul li:hover i {
+    margin-right: 10px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(20%);
+}
+
+header .menu ul li .drop-down ul li:hover a {
+    color: #28c76f;
+}
+
+header .menu ul li:hover .drop-down {
+    opacity: 1;
+    visibility: visible;
+    top: 80px;
+}
+
+header .menu ul li .drop-down ul li {
+    padding: 8px 0;
+}
+
+header .menu ul li button {
+    transition: 0.5s;
+    margin-left: 15px;
+
+}
+
+header .menu ul li button a {
+    background-color: var(--navy-color);
+    color: var(--white-color);
+    font-weight: var(--fw-600);
+    padding: 15px 25px;
+    border-radius: 5%;
+    font-size: var(--fs-15);
+}
+
+header .menu ul li button:hover {
+    transform: scale(1.05);
+}
+
+/* header end */
+/* banner start */
+.banner {
+    padding: 120px 0;
+
+}
+
+.banner .banner-content span {
+    font-size: var(--fs-20);
+    color: #222E41;
+    padding-bottom: 28px;
+    font-family: var(--spartan);
+}
+
+.banner .banner-content h1 {
+    font-size: var(--fs-64);
+    color: #222E41;
+    padding: 28px 0;
+    font-family: var(--spartan);
+
+}
+
+.banner .banner-content h1 a {
+    color: var(--secondary-color);
+}
+
+.banner .banner-content button {
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.banner .banner-content button a {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 20px 20px;
+    font-weight: var(--fw-900);
+
+}
+
+.banner .banner-content button:hover {
+    transform: scale(1.08);
+}
+
+/* banner  end */
+
+/* work start */
+.work {
+    padding: 80px 0;
+    background-color: rgba(128, 128, 128, 0.217);
+
+}
+
+.work .work-content h2 {
+    font-size: var(--fs-44);
+    font-family: var(--spartan);
+    margin-bottom: 20px;
+
+}
+
+.work .work-content p {
+    font-size: var(--fs-23);
+    font-family: var(--IBMplex);
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.work .work-content ul li {
+    padding-bottom: 20px;
+    font-size: var(--fs-20);
+}
+
+.work .work-content ul li i {
+    color: var(--secondary-color);
+    margin-right: 5px;
+}
+
+.work .work-content button {
+    background-color: var(--white-color);
+    color: black;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-600);
+    padding: 20px 20px;
+    border: 1px solid var(--black-color);
+    border-radius: 5%;
+    box-shadow: 0 0 0 0 #222e41 inset;
+    transition: 0.5s;
+
+
+}
+
+.work .work-content button:hover {
+    background-color: var(--navy-color);
+
+    transform: rotateY(20deg);
+}
+
+.work .work-content button:hover a {
+    color: var(--white-color);
+}
+
+
+
+/* work end */
+/* team start */
+.team {
+    padding: 120px 0;
+    background-color: rgba(128, 128, 128, 0.217);
+}
+
+
+.team .team-content h2 {
+    font-size: var(--fs-44);
+    color: #222E41;
+    padding: 28px 0;
+    font-family: var(--spartan);
+}
+
+.team .team-content p {
+    font-size: var(--fs-23);
+    font-family: var(--IBMplex);
+    font-style: italic;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.team .team-content .p-t p {
+    font-size: var(--fs-20);
+    font-family: var(--IBMplex);
+    margin-bottom: 20px;
+    padding: 10px 0;
+    font-style: normal;
+}
+
+
+
+.team .team-content button {
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.team .team-content button a {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 20px 20px;
+    font-weight: var(--fw-900);
+    font-size: 16px;
+
+}
+
+.team .team-content button:hover {
+    transform: scale(1.08);
+}
+
+/* team end */
+/* footer start */
+footer {
+    background-color: rgba(128, 128, 128, 0.418);
+    padding: 60px 0;
+
+}
+
+
+
+
+
+footer .footer-second {
+    padding-top: 50px;
+}
+
+footer .footer-second .f-logo {
+    padding-bottom: 20px;
+}
+
+footer .footer-second h2 {
+    padding-bottom: 15px;
+}
+
+footer .footer-second ul li {
+    padding-bottom: 15px;
+
+}
+
+footer .footer-second ul li a {
+    color: var(--black-color);
+    transition: 0.5s;
+}
+
+footer .footer-second ul li:hover a {
+    color: var(--secondary-color);
+}
+
+footer .footer-second .f-f li:hover a {
+    color: var(--gray-color);
+}
+
+footer .footer-second .f-2 li a {
+    border: 1px solid var(--black-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+
+}
+
+footer .footer-second .f-2 li:hover a {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+footer .footer-second p {
+    padding: 5px 0;
+}
+
+.f-last {
+    background-color: var(--black-color);
+    color: white;
+    padding: 25px 0;
+    margin: 0;
+}
+
+.f-last a {
+    color: var(--white-color);
+    margin-right: 10px;
+}
+
+.w-12 {
+    padding: 0;
+}
+
+
+
+.f-last a {
+    border-bottom: 1px solid var(--white-color);
+    cursor: pointer;
+}
+
+.f-last:hover a {
+    border-bottom: 0px solid var(--white-color)
+}
+
+/* footer end */
